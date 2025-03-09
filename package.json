@@ -2,9 +2,14 @@
   "name": "api-node",
   "version": "1.0.0",
   "main": "index.js",
+  "engine": {
+    "node": "18"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx src/server.ts"
+    "dev": "tsx src/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsup src"
   },
   "keywords": [],
   "author": "",
